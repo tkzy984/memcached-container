@@ -1,7 +1,6 @@
-memcached:
-  image: centos:7
-  entrypoint: ['/entrypoint.sh']
-  working_dir: /
-  user: memcached
-  ports:
-    - 11211:11211
+from: centos:7
+entrypoint: ['/entrypoint.sh']
+working_dir: /
+user: memcached
+ports:
+  - 11211:11211
